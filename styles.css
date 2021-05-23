@@ -1,0 +1,241 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+}
+
+.colored {
+  background-color: #f0e3e3;
+}
+
+.body {
+  width: 80%;
+  align-self: center;
+  padding: 5% 7%;
+}
+h3 {
+  font-family: "Merriweather", "serif";
+  padding: 0 0 10px;
+}
+
+.section-heading {
+  font-family: "Merriweather", "serif";
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px;
+}
+.btn {
+  width: 200px;
+  margin: 10px 20px 10px 0;
+}
+
+/*********************NAVBAR**********************/
+
+.navbar {
+  padding: 1% 2%;
+}
+.scrolled {
+  background-color: #000000 !important;
+  transition: background-color 200ms linear;
+}
+
+/*********************HOME**********************/
+#home .container {
+  padding: 50px 7% 0;
+}
+.main-heading {
+  font-weight: 900;
+  font-size: 4rem;
+}
+.sub-heading {
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+.my-photo {
+  width: 100%;
+}
+
+/*********************ABOUT**********************/
+.about-heading {
+  font-family: "Merriweather", "serif";
+  margin: 15px 0;
+}
+.about-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.42), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  width: 80%;
+  border-radius: 5%;
+}
+
+/*********************SKILLS**********************/
+
+.web-img {
+  height: 75px;
+  margin: 25px 15px 10px;
+}
+.drawing-img {
+  height: 150px;
+  margin: 25px 15px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.42), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+#my-skills img:hover {
+  transform: scale(1.75);
+}
+hr {
+  width: 60px;
+  margin: 50px auto;
+  border: 15px dotted #daa6a6;
+  border-style: none none dotted;
+  color: #fff;
+  background-color: #fff;
+}
+
+/*********************PROJECTS**********************/
+
+#projects {
+  margin: 5% 0;
+  text-align: center;
+}
+
+#projects img {
+  height: 100%;
+  width: 100%;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 300px;
+  margin-bottom: 30px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  padding-top:10px ;
+  background-color: #e9a6a6;
+  transform: rotateY(180deg);
+}
+.description {
+  font-size: 1rem;
+}
+
+/*********************FOOTER**********************/
+
+.center {
+  padding: 5% 7%;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.icon {
+  color: black;
+  margin: 3px;
+}
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.copyright {
+  color: #837f7f;
+  margin-bottom: 5px;
+}
+
+
+
+
+/***************** MEDIA QUERIES *****************/
+@media (min-width: 767px) and (max-width:1000px){
+  .flip-card{
+    height: 275px;
+  }
+  
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  
+  .flip-card{
+    height: 400px;
+  }
+  .flip-card-back{
+    padding: 12% 15%;
+  }
+  .main-heading {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .about-img{
+    width: 0;
+  }
+
+}
+
+@media (max-width: 575px ) and (min-width:300px) {
+  .flip-card-back{
+    padding: 5%;
+  }
+  .main-heading {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  #home .btn{
+    font-size: 12px;
+    width: 150px;
+  }
+  .about-img{
+    width: 0;
+  }
+}
+
+@media (max-width:300px) {
+  .main-heading {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  #home .btn{
+    font-size: 12px;
+    width: 150px;
+  }
+  .about-img{
+    width: 0;
+  }
+  
+}
+
